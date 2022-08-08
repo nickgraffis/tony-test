@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const image = '/rick.jpg'
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className={`h-48 w-48 bg-[url('${window.location.origin + image}')]`}></div>
     </div>
   );
 }
